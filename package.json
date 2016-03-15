@@ -1,0 +1,28 @@
+{
+  "name": "simple-html-dom-parser",
+  "version": "1.0.0",
+  "description": "Simple html parser util",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redexp/simple-html-dom-parser.git"
+  },
+  "keywords": [
+    "html",
+    "parser",
+    "dom"
+  ],
+  "author": "Sergii Kliuchnyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redexp/simple-html-dom-parser/issues"
+  },
+  "homepage": "https://github.com/redexp/simple-html-dom-parser#readme",
+  "dependencies": {
+    "html-parser": "^0.8.0",
+    "tape": "^4.5.1"
+  }
+}
