@@ -1,4 +1,10 @@
-# Simple html to dom parser
+# simple-html-dom-parser
+
+## Install
+`npm install simple-html-dom-parser`
+
+## Test
+`npm test`
 
 ## API
 
