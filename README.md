@@ -8,7 +8,18 @@
 
 ## API
 
-### `parse(html)`
+### `parse(html, options)`
+* `html` - String of input html
+* `options` - Optional object of options:
+```javascript
+{
+  regex: {
+    name: /[a-zA-Z_][\w:\-\.]*/, //Regex for element name
+    attribute: /[a-zA-Z_][\w:\-\.]*/ //Regex for attribute name
+  }
+}
+```
+
 Returns object with next structure
 ```javascript
 {
