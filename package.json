@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/redexp/simple-html-dom-parser#readme",
   "dependencies": {
-    "html-parser": "^0.8.0",
+    "html-parser": "^0.9.0",
     "tape": "^4.5.1"
   }
 }

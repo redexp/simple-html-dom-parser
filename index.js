@@ -6,7 +6,14 @@ module.exports = {
     getInnerHTML: getInnerHTML
 };
 
-function parse(html) {
+/**
+ * @param {String} html
+ * @param {Object} [options]
+ * @returns {{type: string, children: Array}}
+ */
+function parse(html, options) {
+    options = options || {};
+
     var body = {
         type: 'document',
         children: []
@@ -58,7 +65,7 @@ function parse(html) {
         attribute: function(name, value) {
             current.attr[name] = value;
         }
-    });
+    }, options.regex);
 
     return body;
 
