@@ -108,10 +108,17 @@ function getOuterHTML(node) {
 
         for (var attr in node.attr) {
             if (!node.attr.hasOwnProperty(attr)) continue;
+            
+            var val = node.attr[attr];
+            
+            if (val === null) {
+                ret += " " + attr;
+                continue;
+            }
 
-            var quot = hasDoubleQuot.test(node.attr[attr]) ? "'" : '"';
+            var quot = hasDoubleQuot.test(val) ? "'" : '"';
 
-            ret += " " + attr + '=' + quot + node.attr[attr] + quot;
+            ret += " " + attr + '=' + quot + val + quot;
         }
 
         return ret + (node.unary ? "/>" : ">" + getInnerHTML(node) + "</" + node.name + ">");

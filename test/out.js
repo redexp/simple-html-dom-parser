@@ -11,7 +11,8 @@ module.exports = {
             attr: {
                 "id": "test",
                 "data-d-quot": "'test'",
-                "data-quot": '"test"'
+                "data-quot": '"test"',
+                "data-single": null
             },
             children: [
                 text("\n  "),
