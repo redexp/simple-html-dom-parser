@@ -35,11 +35,6 @@ parse(html, options)
 `children:` is array of objects of next types
 ```javascript
 {
-  type: 'document',
-  children: []
-}
-
-{
   type: 'doctype' || 'comment' || 'text',
   parent: {DomObject},
   prev: {DomObject} || null,
